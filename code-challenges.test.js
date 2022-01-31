@@ -163,8 +163,10 @@ describe("cubedSum", () => {
 
 const cubedSum = (array)=>{
   temp=[]
+
+  // try math.sum(args)
   for (let i = 0; i < array.length; i++) {
       temp.push((array[i]**3))  
-  }
+    }
   return temp.reduce((previousValue, currentValue) => {return previousValue + currentValue})
 }
